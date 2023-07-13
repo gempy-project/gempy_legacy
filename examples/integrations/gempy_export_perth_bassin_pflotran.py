@@ -15,7 +15,7 @@ Simulation of the Perth Basin model with PFLOTRAN
 # 
 # First, create the perf bassin model as in `examples/examples/real/Perth_bassin.py`.
 
-import gempy as gp
+import gempy_legacy as gp
 data_path = 'https://raw.githubusercontent.com/cgre-aachen/gempy_data/master/'
 geo_model = gp.create_model('Perth_Basin')
 gp.init_data(geo_model,
@@ -95,7 +95,7 @@ gp.plot_3d(geo_model, show_topography=True)
 # 
 
 # sphinx_gallery_thumbnail_path = '_static/permeability_pflotran.png'
-import gempy.utils.export as export
+import gempy_legacy.utils.export as export
 export.export_pflotran_input(geo_model, path='', filename="perth_basin_mesh.ugi")
 
 

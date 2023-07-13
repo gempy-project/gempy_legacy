@@ -10,7 +10,7 @@ Transform 2019: Integrating Striplog and GemPy
 # %% 
 # Authors: M. de la Varga, Evan Bianco, Brian Burnham and Dieter Werthmüller
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 
 # Importing auxiliary libraries
 import numpy as np

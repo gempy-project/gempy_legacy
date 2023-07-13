@@ -1,4 +1,4 @@
-import gempy as gp
+import gempy_legacy as gp
 import numpy as np
 import pandas as pd
 import pytest
@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 import os
 
 # Input files
-from gempy.addons.map2gempy import loop2gempy
-from gempy.core.grid_modules.create_topography import GDAL_IMPORT
+from gempy_legacy.addons.map2gempy import loop2gempy
+from gempy_legacy.core.grid_modules.create_topography import GDAL_IMPORT
 
 root = 'https://raw.githubusercontent.com/cgre-aachen/gempy_data/master/data/input_data/turner_syncline/'
 root2 = 'https://raw.githubusercontent.com/cgre-aachen/gempy_data/master/data/input_data/australia/'

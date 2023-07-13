@@ -1,6 +1,6 @@
 import numpy as np
 
-from gempy import Project
+from gempy_legacy import Project
 from gempy_engine.core.data import SurfacePoints, Orientations, InterpolationOptions
 from gempy_engine.core.data.grid import RegularGrid, Grid
 from gempy_engine.core.data.input_data_descriptor import InputDataDescriptor, StacksStructure, StackRelationType, TensorsStructure

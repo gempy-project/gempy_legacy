@@ -3,9 +3,9 @@ import sys, os
 sys.path.append("../..")
 
 # Importing GemPy
-import gempy as gp
-from gempy.assets.geophysics import GravityPreprocessing
-from gempy.core.grid_modules.grid_types import CenteredGrid
+import gempy_legacy as gp
+from gempy_legacy.assets.geophysics import GravityPreprocessing
+from gempy_legacy.core.grid_modules.grid_types import CenteredGrid
 
 # Importing auxiliary libraries
 import numpy as np

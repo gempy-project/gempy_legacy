@@ -3,12 +3,12 @@
 # These two lines are necessary only if GemPy is not installed
 import sys, os
 
-import gempy.core.surfaces
+import gempy_legacy.core.surfaces
 
 sys.path.append("../..")
 
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 import pytest
 
 
@@ -34,8 +34,8 @@ def test_add_point():
 
 
 def test_restricting_wrapper():
-    from gempy.core.model import RestrictingWrapper
-    surface = gempy.Surfaces(gp.Series(gp.Faults()))
+    from gempy_legacy.core.model import RestrictingWrapper
+    surface = gempy_legacy.Surfaces(gp.Series(gp.Faults()))
 
     s = RestrictingWrapper(surface)
 

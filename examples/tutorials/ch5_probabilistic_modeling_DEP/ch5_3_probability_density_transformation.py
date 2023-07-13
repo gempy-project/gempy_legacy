@@ -5,9 +5,9 @@
 """
 
 # Importing GemPy
-import gempy as gp
-from gempy.bayesian import plot_posterior as pp
-from gempy.bayesian.plot_posterior import default_red, default_blue
+import gempy_legacy as gp
+from gempy_legacy.bayesian import plot_posterior as pp
+from gempy_legacy.bayesian.plot_posterior import default_red, default_blue
 
 # Importing auxiliary libraries
 import numpy as np

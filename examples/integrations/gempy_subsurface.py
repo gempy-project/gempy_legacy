@@ -78,7 +78,7 @@ sb.visualization.pv_plot([lines_mesh, point_mesh])
 
 # %%
 
-import gempy as gp
+import gempy_legacy as gp
 geo_model = gp.create_model("getting started")
 geo_model.set_regular_grid(extent=[275619, 323824, 3914125, 3961793, -3972.6, 313.922], resolution=[50,50,50])
 gp.set_interpolator(geo_model, aesara_optimizer='fast_compile', verbose=[])

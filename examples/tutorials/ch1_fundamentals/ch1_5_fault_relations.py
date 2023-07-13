@@ -6,7 +6,7 @@
 
 # %%
 # Importing gempy
-import gempy as gp
+import gempy_legacy as gp
 
 # Aux imports
 import numpy as np
@@ -14,7 +14,7 @@ import pandas as pd
 import os
 
 # Importing the function to find the interface
-from gempy.utils.input_manipulation import find_interfaces_from_block_bottoms
+from gempy_legacy.utils.input_manipulation import find_interfaces_from_block_bottoms
 import matplotlib.pyplot as plt
 
 np.random.seed(1515)

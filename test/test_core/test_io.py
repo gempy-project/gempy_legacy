@@ -2,11 +2,11 @@ import os
 
 import pytest
 
-import gempy
-import gempy as gp
+import gempy_legacy
+import gempy_legacy as gp
 import pooch
 
-from gempy.core.solution import xsolution_imported
+from gempy_legacy.core.solution import xsolution_imported
 
 
 def test_load_model(recompute=False):

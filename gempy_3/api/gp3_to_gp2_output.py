@@ -1,6 +1,6 @@
 import numpy as np
 
-from gempy import Project, Solution
+from gempy_legacy import Project, Solution
 from gempy_engine.core.data.dual_contouring_mesh import DualContouringMesh
 from gempy_engine.core.data.octree_level import OctreeLevel
 from gempy_engine.core.data.solutions import Solutions

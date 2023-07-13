@@ -1,7 +1,7 @@
-import gempy
+import gempy_legacy
 import os
 import numpy as np
-import gempy as gp
+import gempy_legacy as gp
 import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
@@ -13,14 +13,14 @@ def test_rescaled_marching_cube(interpolator):
     2 Horizontal layers with drift 0
     """
     # Importing the data from csv files and setting extent and resolution
-    geo_data = gempy.create_data('Simple interpolator', [0, 10, 0, 10, -10, 0], [50, 50, 50],
-                                 path_o=input_path + "/GeoModeller/test_a/test_a_Foliations.csv",
-                                 path_i=input_path + "/GeoModeller/test_a/test_a_Points.csv")
+    geo_data = gempy_legacy.create_data('Simple interpolator', [0, 10, 0, 10, -10, 0], [50, 50, 50],
+                                        path_o=input_path + "/GeoModeller/test_a/test_a_Foliations.csv",
+                                        path_i=input_path + "/GeoModeller/test_a/test_a_Points.csv")
 
     geo_data.set_aesara_function(interpolator)
 
     # Compute model
-    sol = gempy.compute_model(geo_data, compute_mesh_options={'rescale': True})
+    sol = gempy_legacy.compute_model(geo_data, compute_mesh_options={'rescale': True})
     print(sol.vertices)
 
     return geo_data
@@ -47,7 +47,7 @@ def test_custom_grid_solution(model_horizontal_two_layers):
     # set the aesara function
 
     # Compute model
-    sol = gempy.compute_model(geo_model, compute_mesh=False)
+    sol = gempy_legacy.compute_model(geo_model, compute_mesh=False)
     assert sol.custom.shape == (2, 1, 5)
 
 

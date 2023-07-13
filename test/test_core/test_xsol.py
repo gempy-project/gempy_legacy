@@ -1,15 +1,15 @@
 import pytest
 
-import gempy.core.grid
-from gempy import Surfaces
+import gempy_legacy.core.grid
+from gempy_legacy import Surfaces
 
-from gempy.core.data_modules.stack import Stack
+from gempy_legacy.core.data_modules.stack import Stack
 
-import gempy as gp
+import gempy_legacy as gp
 import numpy as np
 
-from gempy.core.solution import Solution
-from gempy.core.xsolution import XSolution
+from gempy_legacy.core.solution import Solution
+from gempy_legacy.core.xsolution import XSolution
 
 # tests skip if subsurface is not installed
 pytest.importorskip("subsurface")
@@ -18,8 +18,8 @@ pytest.importorskip("subsurface")
 def a_grid():
     # Or we can init one of the default grids since the beginning by passing
     # the correspondant attributes
-    grid = gempy.core.grid.Grid(extent=[0, 2000, 0, 2000, -2000, 0],
-                                resolution=[50, 50, 50])
+    grid = gempy_legacy.core.grid.Grid(extent=[0, 2000, 0, 2000, -2000, 0],
+                                       resolution=[50, 50, 50])
     grid.set_active('regular')
 
     grid.create_custom_grid(np.arange(12).reshape(-1, 3))

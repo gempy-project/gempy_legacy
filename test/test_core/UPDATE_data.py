@@ -1,26 +1,26 @@
-import gempy as gp
+import gempy_legacy as gp
 import pandas as pn
 import numpy as np
 import os
 import pytest
 
-import gempy.core.grid
-import gempy.core.surfaces
-import gempy.core.data_modules.geometric_data
-import gempy.core.data_modules.orientations
-import gempy.core.data_modules.stack
-import gempy.core.data_modules.surface_points
+import gempy_legacy.core.grid
+import gempy_legacy.core.surfaces
+import gempy_legacy.core.data_modules.geometric_data
+import gempy_legacy.core.data_modules.orientations
+import gempy_legacy.core.data_modules.stack
+import gempy_legacy.core.data_modules.surface_points
 
 
 @pytest.fixture(scope="module")
 def test_read_surface_points():
-    surface_points = gempy.core.data_modules.surface_points.SurfacePoints()
+    surface_points = gempy_legacy.core.data_modules.surface_points.SurfacePoints()
     surface_points.read_surface_points(os.pardir + "/input_data/FabLessPoints_Points.csv", inplace=True)
 
     # Test setting series
-    series = gempy.core.data_modules.stack.Series(series_distribution={"fault": 'MainFault',
-                                            "Rest": ('SecondaryReservoir', 'Seal3', 'Reservoir', 'Overlying'),
-                                                                       })
+    series = gempy_legacy.core.data_modules.stack.Series(series_distribution={"fault": 'MainFault',
+                                            "Rest"                                   : ('SecondaryReservoir', 'Seal3', 'Reservoir', 'Overlying'),
+                                                                              })
     surface_points.map_data_from_series(series, 'id')
     return surface_points
 
@@ -40,13 +40,13 @@ def test_create_series():
 
 @pytest.fixture()
 def test_create_faults(test_create_series):
-    faults = gempy.core.data_modules.stack.Faults(test_create_series)
+    faults = gempy_legacy.core.data_modules.stack.Faults(test_create_series)
     return faults
 
 @pytest.fixture()
 def test_create_formations():
-    formations = gempy.core.Surfaces.Surfaces(values_array=np.arange(1, 8).reshape(-1, 1),
-                                              properties_names=np.array(['density']))
+    formations = gempy_legacy.core.Surfaces.Surfaces(values_array=np.arange(1, 8).reshape(-1, 1),
+                                                     properties_names=np.array(['density']))
    # formations.set_surfaces_names(['MainFault', 'SecondaryReservoir','Seal',
    #                                 'Reservoir', 'Overlying'])
 
@@ -87,7 +87,7 @@ class Testsurface_points:
 class TestOrientations:
     @pytest.fixture(scope='class')
     def test_read_orientations(self):
-        orientations = gempy.core.data_modules.orientations.Orientations()
+        orientations = gempy_legacy.core.data_modules.orientations.Orientations()
         orientations.read_orientations(os.pardir + "/input_data/FabLessPoints_Foliations.csv", inplace=True)
         return orientations
 
@@ -108,7 +108,7 @@ class TestOrientations:
 class TestGrid:
     def test_set_regular_grid(self):
         # Test creating an empty list
-        grid = gempy.core.grid.Grid()
+        grid = gempy_legacy.core.grid.Grid()
         print(grid.create_regular_grid_3d([0,2000, 0, 2000, -2000, 0], [50, 50, 50]))
 
         # Test set regular grid by hand
@@ -117,8 +117,8 @@ class TestGrid:
     def test_grid_init(self):
         # Or we can init one of the default grids since the beginning by passing
         # the correspondant attributes
-        grid = gempy.core.grid.Grid('regular_grid', extent=[0, 2000, 0, 2000, -2000, 0],
-                                    resolution=[50, 50, 50])
+        grid = gempy_legacy.core.grid.Grid('regular_grid', extent=[0, 2000, 0, 2000, -2000, 0],
+                                           resolution=[50, 50, 50])
 
     def test_grid_front(self):
         gp.create_grid('regular_grid', extent=[0, 2000, 0, 2000, -2000, 0],
@@ -128,7 +128,7 @@ class TestGrid:
 class TestSeries:
 
     def test_set_series(self, test_read_surface_points):
-        series = gempy.core.data_modules.stack.Series()
+        series = gempy_legacy.core.data_modules.stack.Series()
         # We can pass a pandas categories_df
         series.set_series_categories(pn.DataFrame({"fault": ['test2'],
                                         "Rest": 'SecondaryReservoir'}))
@@ -139,9 +139,9 @@ class TestSeries:
         print(series)
 
         # Test init series
-        series = gempy.core.data_modules.stack.Series(series_distribution={"fault": 'MainFault',
-                                                "Rest": ('SecondaryReservoir', 'Seal3', 'Reservoir', 'Overlying'),
-                                                                           })
+        series = gempy_legacy.core.data_modules.stack.Series(series_distribution={"fault": 'MainFault',
+                                                "Rest"                                   : ('SecondaryReservoir', 'Seal3', 'Reservoir', 'Overlying'),
+                                                                                  })
         return series
 
     @pytest.fixture
@@ -167,12 +167,12 @@ class TestSeries:
 
 class TestFaults:
     def test_set_faults(self, test_create_series):
-        faults = gempy.core.data_modules.stack.Faults(test_create_series)
+        faults = gempy_legacy.core.data_modules.stack.Faults(test_create_series)
         faults.set_is_fault(['Rest'])
         print(faults)
 
     def test_default_faults(self, test_create_series):
-        faults = gempy.core.data_modules.stack.Faults(test_create_series)
+        faults = gempy_legacy.core.data_modules.stack.Faults(test_create_series)
         print(faults)
 
     def test_set_fault_relations(self, test_create_faults):
@@ -191,7 +191,7 @@ class TestFormations:
         print(test_create_formations)
 
     def test_map_formations_from_series2(self, test_create_series):
-        formations = gempy.core.Surfaces.Surfaces()
+        formations = gempy_legacy.core.Surfaces.Surfaces()
         formations.map_formations_from_series(test_create_series)
         print(formations)
 
@@ -200,15 +200,15 @@ class TestFormations:
                                 'Reservoir', 'Overlying'])
 
         print(test_create_formations)
-        formations = gempy.core.Surfaces.Surfaces(values_array=np.arange(1, 8).reshape(-1, 1),
-                                                  properties_names=np.array(['density']))
+        formations = gempy_legacy.core.Surfaces.Surfaces(values_array=np.arange(1, 8).reshape(-1, 1),
+                                                         properties_names=np.array(['density']))
 
         formations.set_surfaces_names(['MainFault', 'SecondaryReservoir', 'Seal',
                                 'Reservoir', 'Overlying'])
         print(formations)
 
-        formations = gempy.core.Surfaces.Surfaces(values_array=np.arange(1, 2).reshape(-1, 1),
-                                                  properties_names=np.array(['density']))
+        formations = gempy_legacy.core.Surfaces.Surfaces(values_array=np.arange(1, 2).reshape(-1, 1),
+                                                         properties_names=np.array(['density']))
 
         formations.set_surfaces_names(['MainFault', 'SecondaryReservoir', 'Seal',
                                         'Reservoir', 'Overlying'])

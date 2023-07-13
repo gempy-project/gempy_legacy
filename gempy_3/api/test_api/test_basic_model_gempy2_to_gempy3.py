@@ -4,9 +4,9 @@ import pytest
 #IN_GITHUB_ACTIONS = os.getenv("GITHUB_ACTIONS") == "true"
 IN_GITHUB_ACTIONS = True
 
-import gempy as gp
-from gempy import Project
-from gempy.plot.vista import GemPyToVista
+import gempy_legacy as gp
+from gempy_legacy import Project
+from gempy_legacy.plot.vista import GemPyToVista
 from gempy_3.api.gp2_to_gp3_input import gempy_project_to_interpolation_input, gempy_project_to_input_data_descriptor, gempy_project_to_interpolation_options
 from gempy_3.api.gp3_to_gp2_output import set_gp3_solutions_to_gp2_solution
 from gempy_3.api.test_api._gp2togp3_test_utils import create_interpolator, load_model, map_sequential_pile

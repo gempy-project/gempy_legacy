@@ -15,7 +15,7 @@ import sys, os
 sys.path.append("../../..")
 
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 
 # Embedding matplotlib figures in the notebooks
 # %matplotlib inline

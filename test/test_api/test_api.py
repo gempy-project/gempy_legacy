@@ -1,4 +1,4 @@
-import gempy as gp
+import gempy_legacy as gp
 
 
 def test_edit_1(one_fault_model_no_interp):

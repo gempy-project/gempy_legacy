@@ -3,7 +3,7 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
-import gempy as gp
+import gempy_legacy as gp
 
 
 # ? This test does not seem to be testing what it says it is testing

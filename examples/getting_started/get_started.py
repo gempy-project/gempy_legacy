@@ -7,7 +7,7 @@ Getting Started
 # %%
 
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 
 # Importing aux libraries
 import numpy as np

@@ -13,14 +13,14 @@
 
 # %%
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 
 # Importing auxiliary libraries
 import numpy as np
 import matplotlib.pyplot as plt
 
 # new for this
-from gempy.assets import kriging
+from gempy_legacy.assets import kriging
 
 np.random.seed(5555)
 

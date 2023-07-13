@@ -4,7 +4,7 @@ sys.path.append("../..")
 input_path = os.path.dirname(__file__)+'/../../input_data'
 
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 
 
 # Importing auxiliary libraries

@@ -1,4 +1,4 @@
-import gempy as gp
+import gempy_legacy as gp
 import pyvista as pv
 import matplotlib as mpl
 mpl.use('Agg')

@@ -91,7 +91,7 @@ You should be familiar with `pytest` before contributing.
 Please run all tests locally before creating a pull request. 
 You can do this by running `pytest` via your terminal in your GemPy folder:
 ```bash
-cd ./path/to/gempy
+cd ./path/to/gempy_legacy
 pytest
 ```
 All tests are located in the `test` folder and its subfolders.  

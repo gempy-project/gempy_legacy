@@ -3,7 +3,7 @@ import os
 import sys
 
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 
 # Importing auxiliary libraries
 import numpy as np

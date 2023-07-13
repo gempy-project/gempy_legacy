@@ -6,7 +6,7 @@
 
 # %%
 # Importing
-import gempy as gp
+import gempy_legacy as gp
 import numpy as np
 import matplotlib.pyplot as plt
 np.random.seed(1234)
@@ -93,7 +93,7 @@ plt.show()
 # 
 
 # %% 
-from gempy.core.grid_modules import section_utils
+from gempy_legacy.core.grid_modules import section_utils
 
 # %% 
 polygondict, cdict, extent = section_utils.get_polygon_dictionary(geo_model, 'section1')

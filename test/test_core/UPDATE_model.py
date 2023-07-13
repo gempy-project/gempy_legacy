@@ -1,4 +1,4 @@
-import gempy.gempy_api as gp
+import gempy_legacy.gempy_api as gp
 import pytest
 
 

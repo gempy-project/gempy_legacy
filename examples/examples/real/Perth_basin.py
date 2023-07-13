@@ -5,7 +5,7 @@ Perth basin.
 import os
 
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 
 # Importing auxiliary libraries
 import matplotlib

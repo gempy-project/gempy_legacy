@@ -16,7 +16,7 @@ sys.path.append("../../../remote-geomod/rgeomod")
 sys.path.append("../gempy/")
 sys.path.append("/home/miguel/PycharmProjects/remote-geomod/")
 # Importing gempy
-import gempy as gp
+import gempy_legacy as gp
 import pytest
 
 #import gdal
