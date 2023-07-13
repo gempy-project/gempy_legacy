@@ -11,7 +11,7 @@ Model 4 - Pinchout
 
 # %%
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 
 import pandas as pd
 pd.set_option('display.precision', 2)

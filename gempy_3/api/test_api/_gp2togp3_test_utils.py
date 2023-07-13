@@ -1,7 +1,7 @@
 import os
 
-import gempy as gp
-from gempy import Project
+import gempy_legacy as gp
+from gempy_legacy import Project
 
 
 input_path = os.path.dirname(__file__) + '/../../../test/input_data'

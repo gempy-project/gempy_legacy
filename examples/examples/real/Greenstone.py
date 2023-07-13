@@ -4,7 +4,7 @@ Greenstone.
 """
 
 # Importing gempy
-import gempy as gp
+import gempy_legacy as gp
 
 # Aux imports
 import numpy as np

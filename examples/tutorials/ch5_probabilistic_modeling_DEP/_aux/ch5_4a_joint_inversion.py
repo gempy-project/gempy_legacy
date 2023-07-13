@@ -9,7 +9,7 @@ sys.path.append("../../gempy")
 os.environ["aesara_FLAGS"] = "mode=FAST_RUN,device=cuda"
 
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 from examples.tutorials.ch5_probabilistic_modeling_DEP.aux_functions.DEP_aux_funct import plot_geo_setting
 
 # Embedding matplotlib figures in the notebooks

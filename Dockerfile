@@ -55,7 +55,7 @@ ENV LANGUAGE en_US.UTF-8
 # Create user with UID=1000 and in the 'users' group
 RUN useradd -m -s /bin/bash -N -u $NB_UID $NB_USER && \
     mkdir -p /opt/conda && \
-    chown gempy /opt/conda
+    chown gempy_legacy /opt/conda
 
 USER gempy
 

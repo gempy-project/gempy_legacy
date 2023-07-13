@@ -1,13 +1,13 @@
 import os
 import sys
 
-import gempy as gp
+import gempy_legacy as gp
 import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
 
-from gempy.core.grid_modules.create_topography import GDAL_IMPORT
-from gempy.core.grid_modules.topography import Topography
+from gempy_legacy.core.grid_modules.create_topography import GDAL_IMPORT
+from gempy_legacy.core.grid_modules.topography import Topography
 import pytest
 
 import numpy as np

@@ -8,7 +8,7 @@ sys.path.append("../../gempy")
 os.environ["aesara_FLAGS"] = "mode=FAST_RUN,device=cuda"
 
 # Importing GemPy
-import gempy as gp
+import gempy_legacy as gp
 from examples.tutorials.ch5_probabilistic_modeling_DEP.aux_functions.DEP_aux_funct import plot_geo_setting
 
 # Embedding matplotlib figures in the notebooks
@@ -111,7 +111,7 @@ az.plot_joint(data, var_names=['depth_1', 'depth_2'])
 
 # %% 
 # !git pull
-from gempy.bayesian import plot_posterior as pp
+from gempy_legacy.bayesian import plot_posterior as pp
 
 import seaborn as sns
 from ipywidgets import interact, interactive, fixed, interact_manual
@@ -145,7 +145,7 @@ import numpy as np
 import imageio
 
 # !git pull
-from gempy.bayesian import plot_posterior as pp
+from gempy_legacy.bayesian import plot_posterior as pp
 
 import seaborn as sns
 
@@ -290,7 +290,7 @@ imageio.mimsave('./learning_cheap.gif', pictures[:500:3], fps=24)
 # 
 
 # %% 
-from gempy.plot import vista
+from gempy_legacy.plot import vista
 import pyvista as pv
 from importlib import reload
 reload(vista)

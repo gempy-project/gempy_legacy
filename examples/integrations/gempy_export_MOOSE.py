@@ -5,7 +5,7 @@ Export a geological model from GemPy to use in MOOSE
 """
 
 # %%
-import gempy as gp
+import gempy_legacy as gp
 
 # %%
 # Creating a geological model
@@ -158,7 +158,7 @@ units = units.flatten('F')
 # %%
 
 # sphinx_gallery_thumbnail_path = '_static/GemPy_model_combined.png'
-import gempy.utils.export as export
+import gempy_legacy.utils.export as export
 export.export_moose_input(geo_model, path='')
 
 # %%

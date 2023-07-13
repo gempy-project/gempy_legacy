@@ -1,6 +1,6 @@
 import pytest
-import gempy.gempy_api as gempy
-import gempy as gp
+import gempy_legacy.gempy_api as gempy
+import gempy_legacy as gp
 
 import os
 

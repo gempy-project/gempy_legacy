@@ -1,4 +1,4 @@
-import gempy as gp
+import gempy_legacy as gp
 import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt

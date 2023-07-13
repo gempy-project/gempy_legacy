@@ -5,7 +5,7 @@ import numpy as np
 import sys, os
 
 sys.path.append("../..")
-import gempy
+import gempy_legacy
 import matplotlib.pyplot as plt
 import pdb
 
