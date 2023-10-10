@@ -587,13 +587,15 @@ class InterpolatorGravity:
 class InterpolatorMagnetics:
     def set_aesara_shared_Vs_kernel(self, V=None):
 
-        if V is None or V == 'auto':
+        # Check that V is not None an is not auto consider that V is can be numpy array
+        if V is not None and np.any(V != 'auto'):
+           self.aesara_graph.V.set_value(V.astype(self.dtype))
+        else:
             try:
                 V = self.calculate_V(self.grid.centered_grid)
             except AttributeError:
                 raise AttributeError('You need to calculate or pass V first.')
 
-        self.aesara_graph.V.set_value(V.astype(self.dtype))
 
     def calculate_V(self, centered_grid):
         from gempy_legacy.assets.geophysics import MagneticsPreprocessing
