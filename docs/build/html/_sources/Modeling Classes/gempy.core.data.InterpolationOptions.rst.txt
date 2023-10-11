@@ -1,0 +1,55 @@
+﻿gempy.core.data.InterpolationOptions
+====================================
+
+.. currentmodule:: gempy.core.data
+
+
+.. autoclass:: InterpolationOptions
+   :no-undoc-members:
+
+   
+   .. include:: ../gen_modules/backreferences/gempy.core.data.InterpolationOptions.examples
+   .. raw:: html
+
+       <div class="sphx-glr-clear"></div>
+   
+   
+   
+   .. rubric:: Methods
+   .. autosummary::
+   
+      ~InterpolationOptions.__init__
+      ~InterpolationOptions.update_options
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~InterpolationOptions.c_o
+      ~InterpolationOptions.compute_corners
+      ~InterpolationOptions.compute_scalar_gradient
+      ~InterpolationOptions.current_octree_level
+      ~InterpolationOptions.debug
+      ~InterpolationOptions.debug_water_tight
+      ~InterpolationOptions.dual_contouring
+      ~InterpolationOptions.dual_contouring_fancy
+      ~InterpolationOptions.dual_contouring_masking_options
+      ~InterpolationOptions.gi_res
+      ~InterpolationOptions.i_res
+      ~InterpolationOptions.is_last_octree_level
+      ~InterpolationOptions.kernel_function
+      ~InterpolationOptions.kernel_options
+      ~InterpolationOptions.n_uni_eq
+      ~InterpolationOptions.number_dimensions
+      ~InterpolationOptions.number_octree_levels
+      ~InterpolationOptions.number_octree_levels_surface
+      ~InterpolationOptions.range
+      ~InterpolationOptions.uni_degree
+   
+   
+
+

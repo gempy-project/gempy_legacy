@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code &#8212; GemPy 2.2.8 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery-rendered-html.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="gempy.activate_interactive_df" href="GemPy%20API/gempy.activate_interactive_df.html" />
+    <link rel="prev" title="GemPy - Subsurface Link" href="integrations/gempy_subsurface.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="code">
+<h1>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="gempy-api">
+<h2>GemPy API<a class="headerlink" href="#gempy-api" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="GemPy%20API/gempy.activate_interactive_df.html#gempy.activate_interactive_df" title="gempy.activate_interactive_df"><code class="xref py py-obj docutils literal notranslate"><span class="pre">activate_interactive_df</span></code></a>(geo_model[, plot_object])</p></td>
+<td><p>Experimental: Activate the use of the QgridProjectIntegration: TODO evaluate the use of this functionality</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="GemPy%20API/gempy.compute_model.html#gempy.compute_model" title="gempy.compute_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_model</span></code></a>(model[, output, at, …])</p></td>
+<td><p>Computes the geological model and any extra output given in the additional data option.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="GemPy%20API/gempy.compute_model_at.html#gempy.compute_model_at" title="gempy.compute_model_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_model_at</span></code></a>(new_grid, model, **kwargs)</p></td>
+<td><p>This function creates a new custom grid and deactivate all the other grids and compute the model there:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="GemPy%20API/gempy.create_data.html#gempy.create_data" title="gempy.create_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_data</span></code></a>([project_name, extent, resolution])</p></td>
+<td><p>Create a <a class="reference internal" href="Model/gempy.core.model.Project.html#gempy.core.model.Project" title="gempy.core.model.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">gempy.core.model.Project</span></code></a> object and initialize some of the main functions such as:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="GemPy%20API/gempy.create_model.html#gempy.create_model" title="gempy.create_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_model</span></code></a>([project_name])</p></td>
+<td><p>Create a Project object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="GemPy%20API/gempy.init_data.html#gempy.init_data" title="gempy.init_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">init_data</span></code></a>(geo_model[, extent, resolution])</p></td>
+<td><p>Initialize some of the main functions such as:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="GemPy%20API/gempy.map_series_to_surfaces.html#gempy.map_series_to_surfaces" title="gempy.map_series_to_surfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">map_series_to_surfaces</span></code></a>(geo_model[, …])</p></td>
+<td><p>Mapping which surfaces belongs to which geological feature</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="GemPy%20API/gempy.map_stack_to_surfaces.html#gempy.map_stack_to_surfaces" title="gempy.map_stack_to_surfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">map_stack_to_surfaces</span></code></a>(geo_model[, …])</p></td>
+<td><p>Mapping which surfaces belongs to which geological feature</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="GemPy%20API/gempy.read_csv.html#gempy.read_csv" title="gempy.read_csv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_csv</span></code></a>(geo_model[, path_i, path_o])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">param geo_model</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="GemPy%20API/gempy.update_additional_data.html#gempy.update_additional_data" title="gempy.update_additional_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_additional_data</span></code></a>(model[, …])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">param model</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="GemPy%20API/gempy.get_data.html#gempy.get_data" title="gempy.get_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_data</span></code></a>(model[, itype, numeric, verbosity])</p></td>
+<td><p>Method to return the data stored in <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v1.2.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a> within a <a class="reference internal" href="Model/gempy.core.model.Project.html#gempy.core.model.Project" title="gempy.core.model.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">gempy.core.model.Project</span></code></a> data object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="GemPy%20API/gempy.get_surfaces.html#gempy.get_surfaces" title="gempy.get_surfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_surfaces</span></code></a>(model_solution)</p></td>
+<td><p>Get vertices and simplices of the surface_points for its vtk visualization and further analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="GemPy%20API/gempy.get_additional_data.html#gempy.get_additional_data" title="gempy.get_additional_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_additional_data</span></code></a>(model)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="GemPy%20API/gempy.get_interpolator.html#gempy.get_interpolator" title="gempy.get_interpolator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_interpolator</span></code></a>(model)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="GemPy%20API/gempy.get_th_fn.html#gempy.get_th_fn" title="gempy.get_th_fn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_th_fn</span></code></a>(model)</p></td>
+<td><p>Get the compiled theano function</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="model">
+<h2>Model<a class="headerlink" href="#model" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Model/gempy.core.model.Project.html#gempy.core.model.Project" title="gempy.core.model.Project"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Project</span></code></a>([project_name])</p></td>
+<td><p>Container class of all objects that constitute a GemPy model.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Model/gempy.core.model.ImplicitCoKriging.html#gempy.core.model.ImplicitCoKriging" title="gempy.core.model.ImplicitCoKriging"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ImplicitCoKriging</span></code></a>()</p></td>
+<td><p>This class handles all the mutation of the data objects of the model involved on the</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="plot">
+<h2>Plot<a class="headerlink" href="#plot" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Plot/gempy.plot_2d.html#gempy.plot_2d" title="gempy.plot_2d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_2d</span></code></a>(model[, n_axis, section_names, …])</p></td>
+<td><p>Plot 2-D sections of geomodel.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Plot/gempy.plot_3d.html#gempy.plot_3d" title="gempy.plot_3d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_3d</span></code></a>(model[, plotter_type, show_data, …])</p></td>
+<td><p>foobar</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Data/gempy.core.data_modules.stack.Stack.html#gempy.core.data_modules.stack.Stack" title="gempy.core.data_modules.stack.Stack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stack</span></code></a>(features_names, fault_features, rel_matrix)</p></td>
+<td><p>Class that encapsulates all type of geological features. So far is Series and</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Data/gempy.core.data_modules.stack.Series.html#gempy.core.data_modules.stack.Series" title="gempy.core.data_modules.stack.Series"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a>(faults, series_names)</p></td>
+<td><p>Class that contains the functionality and attributes related to the series.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Data/gempy.core.data_modules.stack.Faults.html#gempy.core.data_modules.stack.Faults" title="gempy.core.data_modules.stack.Faults"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Faults</span></code></a>([series_fault, rel_matrix])</p></td>
+<td><p>Class that encapsulate faulting related content.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Data/gempy.core.data.Surfaces.html#gempy.core.data.Surfaces" title="gempy.core.data.Surfaces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Surfaces</span></code></a>(series[, surface_names, …])</p></td>
+<td><p>Class that contains the surfaces of the model and the values of each of them.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Data/gempy.core.data.Structure.html#gempy.core.data.Structure" title="gempy.core.data.Structure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure</span></code></a>(surface_points, orientations, …)</p></td>
+<td><p>The structure_data class analyse the different lengths of subset in the interface and orientations categories_df to pass them to the theano function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Data/gempy.core.data.KrigingParameters.html#gempy.core.data.KrigingParameters" title="gempy.core.data.KrigingParameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KrigingParameters</span></code></a>(grid, structure)</p></td>
+<td><p>Class that stores and computes the default values for the kriging parameters used during the interpolation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Data/gempy.core.data.Options.html#gempy.core.data.Options" title="gempy.core.data.Options"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Options</span></code></a>()</p></td>
+<td><p>The class options contains the auxiliary user editable flags mainly independent to the model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Data/gempy.core.data.AdditionalData.html#gempy.core.data.AdditionalData" title="gempy.core.data.AdditionalData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdditionalData</span></code></a>(surface_points, orientations, …)</p></td>
+<td><p>Container class that encapsulate <a class="reference internal" href="Data/gempy.core.data.Structure.html#gempy.core.data.Structure" title="gempy.core.data.Structure"><code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></a>, <a class="reference internal" href="Data/gempy.core.data.KrigingParameters.html#gempy.core.data.KrigingParameters" title="gempy.core.data.KrigingParameters"><code class="xref py py-class docutils literal notranslate"><span class="pre">KrigingParameters</span></code></a>, <a class="reference internal" href="Data/gempy.core.data.Options.html#gempy.core.data.Options" title="gempy.core.data.Options"><code class="xref py py-class docutils literal notranslate"><span class="pre">Options</span></code></a> and</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Data/gempy.core.data.MetaData.html#gempy.core.data.MetaData" title="gempy.core.data.MetaData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MetaData</span></code></a>([project_name])</p></td>
+<td><p>Class containing metadata of the project.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Data/gempy.core.data.Grid.html#gempy.core.data.Grid" title="gempy.core.data.Grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Grid</span></code></a>(**kwargs)</p></td>
+<td><p>Class to generate grids.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="grids">
+<h2>Grids<a class="headerlink" href="#grids" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Data/Grid/gempy.core.grid_modules.grid_types.RegularGrid.html#gempy.core.grid_modules.grid_types.RegularGrid" title="gempy.core.grid_modules.grid_types.RegularGrid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RegularGrid</span></code></a>([extent, resolution])</p></td>
+<td><p>Class with the methods and properties to manage 3D regular grids where the model will be interpolated.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Data/Grid/gempy.core.grid_modules.grid_types.CustomGrid.html#gempy.core.grid_modules.grid_types.CustomGrid" title="gempy.core.grid_modules.grid_types.CustomGrid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomGrid</span></code></a>(custom_grid)</p></td>
+<td><p>Object that contains arbitrary XYZ coordinates.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Data/Grid/gempy.core.grid_modules.topography.Topography.html#gempy.core.grid_modules.topography.Topography" title="gempy.core.grid_modules.topography.Topography"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Topography</span></code></a>([regular_grid, …])</p></td>
+<td><p>Object to include topography in the model.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Data/Grid/gempy.core.grid_modules.grid_types.Sections.html#gempy.core.grid_modules.grid_types.Sections" title="gempy.core.grid_modules.grid_types.Sections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sections</span></code></a>([regular_grid, z_ext, section_dict])</p></td>
+<td><p>Object that creates a grid of cross sections between two points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Data/Grid/gempy.core.grid_modules.grid_types.CenteredGrid.html#gempy.core.grid_modules.grid_types.CenteredGrid" title="gempy.core.grid_modules.grid_types.CenteredGrid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CenteredGrid</span></code></a>([centers, radius, resolution])</p></td>
+<td><p>Logarithmic spaced grid.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="geometric-data">
+<h2>Geometric Data<a class="headerlink" href="#geometric-data" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Data/gempy.core.data_modules.geometric_data.SurfacePoints.html#gempy.core.data_modules.geometric_data.SurfacePoints" title="gempy.core.data_modules.geometric_data.SurfacePoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SurfacePoints</span></code></a>(surfaces[, coord, surface])</p></td>
+<td><p>Data child with specific methods to manipulate interface data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Data/gempy.core.data_modules.geometric_data.Orientations.html#gempy.core.data_modules.geometric_data.Orientations" title="gempy.core.data_modules.geometric_data.Orientations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Orientations</span></code></a>(surfaces[, coord, pole_vector, …])</p></td>
+<td><p>Data child with specific methods to manipulate orientation data.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="interpolator">
+<h2>Interpolator<a class="headerlink" href="#interpolator" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Interpolator/gempy.core.interpolator.InterpolatorModel.html#gempy.core.interpolator.InterpolatorModel" title="gempy.core.interpolator.InterpolatorModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InterpolatorModel</span></code></a>(surface_points, …)</p></td>
+<td><p>Child class of <code class="xref py py-class docutils literal notranslate"><span class="pre">Interpolator</span></code> which set the shared variables and compiles the theano graph to compute the geological model, i.e. lithologies.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Interpolator/gempy.core.interpolator.InterpolatorGravity.html#gempy.core.interpolator.InterpolatorGravity" title="gempy.core.interpolator.InterpolatorGravity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InterpolatorGravity</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="solution">
+<h2>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Solution/gempy.core.solution.Solution.html#gempy.core.solution.Solution" title="gempy.core.solution.Solution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Solution</span></code></a>(grid, surfaces, series)</p></td>
+<td><p>This class stores the output of the interpolation and the necessary objects to visualize and manipulate this data.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/./logos/gempy.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=cgre-aachen&repo=gempy&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a class="badge" href="https://travis-ci.org/cgre-aachen/gempy">
+    <img
+        alt="https://secure.travis-ci.org/cgre-aachen/gempy.svg?branch=master"
+        src="https://secure.travis-ci.org/cgre-aachen/gempy.svg?branch=master"
+    />
+</a>
+</p>
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Additional projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/index.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">GemPy Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integrations/index.html">Integrations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gempy-api">GemPy API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#model">Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#plot">Plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data">Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grids">Grids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#geometric-data">Geometric Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interpolator">Interpolator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#solution">Solution</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="integrations/gempy_subsurface.html" title="previous chapter">GemPy - Subsurface Link</a></li>
+      <li>Next: <a href="GemPy%20API/gempy.activate_interactive_df.html" title="next chapter">gempy.activate_interactive_df</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017-2021, CGRE-Aachen Team.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/code.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

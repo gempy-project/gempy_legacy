@@ -1,0 +1,39 @@
+
+
+Examples using ``gempy_engine.InterpolationOptions.number_octree_levels_surface``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. start-sphx-glr-thumbnails
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This script creates a folded domain featuring an unconformity and a fault using GemPy, an open-...">
+
+.. only:: html
+
+  .. image:: /examples/images/thumb/sphx_glr_g07_combination_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_g07_combination.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Model 7 - Combination</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_examples_g07_combination.py`
+
+.. raw:: html
+
+    </div>
+

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>gempy.core.data.GeoModel &#8212; GemPy 2023.2.0b1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=270d38c7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=61a4c737" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=e5fbc548" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=39c4bfd0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="gempy.core.data.StructuralFrame" href="gempy.core.data.StructuralFrame.html" />
+    <link rel="prev" title="gempy_viewer.plot_3d" href="../Plot/gempy_viewer.plot_3d.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="gempy-core-data-geomodel">
+<h1>gempy.core.data.GeoModel<a class="headerlink" href="#gempy-core-data-geomodel" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gempy.core.data.</span></span><span class="sig-name descname"><span class="pre">GeoModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structural_frame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gempy.core.data.StructuralFrame.html#gempy.core.data.StructuralFrame" title="gempy.core.data.structural_frame.StructuralFrame"><span class="pre">StructuralFrame</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gempy.core.data.Grid.html#gempy.core.data.Grid" title="gempy.core.data.grid.Grid"><span class="pre">Grid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">interpolation_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gempy.core.data.InterpolationOptions.html#gempy.core.data.InterpolationOptions" title="gempy_engine.core.data.options.InterpolationOptions"><span class="pre">InterpolationOptions</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gempy/core/data/geo_model.html#GeoModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gempy.core.data.GeoModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class representing a geological model.</p>
+<section id="examples-using-gempy-core-data-geomodel">
+<h2>Examples using <code class="docutils literal notranslate"><span class="pre">gempy.core.data.GeoModel</span></code><a class="headerlink" href="#examples-using-gempy-core-data-geomodel" title="Permalink to this heading">¶</a></h2>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Getting Started"><img alt="" src="../_images/sphx_glr_get_started_thumb.png" />
+<p><a class="reference internal" href="../tutorials/a_getting_started/get_started.html#sphx-glr-tutorials-a-getting-started-get-started-py"><span class="std std-ref">Getting Started</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Getting Started</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="1.1 -Basics of geological modeling with GemPy"><img alt="" src="../_images/sphx_glr_ch1_1_basics_thumb.png" />
+<p><a class="reference internal" href="../tutorials/ch1_fundamentals/ch1_1_basics.html#sphx-glr-tutorials-ch1-fundamentals-ch1-1-basics-py"><span class="std std-ref">1.1 -Basics of geological modeling with GemPy</span></a></p>
+  <div class="sphx-glr-thumbnail-title">1.1 -Basics of geological modeling with GemPy</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="1.3b: 2-D sections"><img alt="" src="../_images/sphx_glr_ch1_3b_cross_sections_thumb.png" />
+<p><a class="reference internal" href="../tutorials/ch1_fundamentals/ch1_3b_cross_sections.html#sphx-glr-tutorials-ch1-fundamentals-ch1-3b-cross-sections-py"><span class="std std-ref">1.3b: 2-D sections</span></a></p>
+  <div class="sphx-glr-thumbnail-title">1.3b: 2-D sections</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="1.3c: Adding topography to geological models"><img alt="" src="../_images/sphx_glr_ch1_3c_topography_thumb.png" />
+<p><a class="reference internal" href="../tutorials/ch1_fundamentals/ch1_3c_topography.html#sphx-glr-tutorials-ch1-fundamentals-ch1-3c-topography-py"><span class="std std-ref">1.3c: Adding topography to geological models</span></a></p>
+  <div class="sphx-glr-thumbnail-title">1.3c: Adding topography to geological models</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="1.4: Unconformity relationships"><img alt="" src="../_images/sphx_glr_ch1_4_onlap_relations_thumb.png" />
+<p><a class="reference internal" href="../tutorials/ch1_fundamentals/ch1_4_onlap_relations.html#sphx-glr-tutorials-ch1-fundamentals-ch1-4-onlap-relations-py"><span class="std std-ref">1.4: Unconformity relationships</span></a></p>
+  <div class="sphx-glr-thumbnail-title">1.4: Unconformity relationships</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="1.5: Fault relations"><img alt="" src="../_images/sphx_glr_ch1_5_fault_relations_thumb.png" />
+<p><a class="reference internal" href="../tutorials/ch1_fundamentals/ch1_5_fault_relations.html#sphx-glr-tutorials-ch1-fundamentals-ch1-5-fault-relations-py"><span class="std std-ref">1.5: Fault relations</span></a></p>
+  <div class="sphx-glr-thumbnail-title">1.5: Fault relations</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="1.6: 2D Visualization."><img alt="" src="../_images/sphx_glr_ch1_6_2d_visualization_thumb.png" />
+<p><a class="reference internal" href="../tutorials/ch1_fundamentals/ch1_6_2d_visualization.html#sphx-glr-tutorials-ch1-fundamentals-ch1-6-2d-visualization-py"><span class="std std-ref">1.6: 2D Visualization.</span></a></p>
+  <div class="sphx-glr-thumbnail-title">1.6: 2D Visualization.</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="3.1: Simple example of kriging in gempy"><img alt="" src="../_images/sphx_glr_ch3_1_kriging_interpolation_and_simulation_thumb.png" />
+<p><a class="reference internal" href="../tutorials/ch3-Interpolations/ch3_1_kriging_interpolation_and_simulation.html#sphx-glr-tutorials-ch3-interpolations-ch3-1-kriging-interpolation-and-simulation-py"><span class="std std-ref">3.1: Simple example of kriging in gempy</span></a></p>
+  <div class="sphx-glr-thumbnail-title">3.1: Simple example of kriging in gempy</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Chapter 4: Analyzing Geomodel Topology"><img alt="" src="../_images/sphx_glr_ch4-1-Topology_thumb.png" />
+<p><a class="reference internal" href="../tutorials/ch4-Topology/ch4-1-Topology.html#sphx-glr-tutorials-ch4-topology-ch4-1-topology-py"><span class="std std-ref">Chapter 4: Analyzing Geomodel Topology</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Chapter 4: Analyzing Geomodel Topology</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This script demonstrates how to create a basic model of horizontally stacked layers using GemPy..."><img alt="" src="../_images/sphx_glr_a01_horizontal_stratigraphic_thumb.png" />
+<p><a class="reference internal" href="../examples/a01_horizontal_stratigraphic.html#sphx-glr-examples-a01-horizontal-stratigraphic-py"><span class="std std-ref">Model 1 - Horizontal stratigraphic</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Model 1 - Horizontal stratigraphic</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This script demonstrates how to create a geological model of an anticline structure using GemPy..."><img alt="" src="../_images/sphx_glr_b02_fold_thumb.png" />
+<p><a class="reference internal" href="../examples/b02_fold.html#sphx-glr-examples-b02-fold-py"><span class="std std-ref">Model 2 - Anticline</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Model 2 - Anticline</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This script demonstrates how to create a geological model of a recumbent fold using GemPy, a Py..."><img alt="" src="../_images/sphx_glr_c03_recumbent_fold_thumb.png" />
+<p><a class="reference internal" href="../examples/c03_recumbent_fold.html#sphx-glr-examples-c03-recumbent-fold-py"><span class="std std-ref">Model 3 - Recumbent Fold</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Model 3 - Recumbent Fold</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This script demonstrates how to create a geological model with a layer of varying thickness (pi..."><img alt="" src="../_images/sphx_glr_d04_pinchout_thumb.png" />
+<p><a class="reference internal" href="../examples/d04_pinchout.html#sphx-glr-examples-d04-pinchout-py"><span class="std std-ref">Model 4 - Pinchout</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Model 4 - Pinchout</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This script demonstrates how to create a simple fault model with constant offset using GemPy, a..."><img alt="" src="../_images/sphx_glr_e05_fault_thumb.png" />
+<p><a class="reference internal" href="../examples/e05_fault.html#sphx-glr-examples-e05-fault-py"><span class="std std-ref">Model 5 - Fault</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Model 5 - Fault</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This script creates an unconformity cutting an anticline structure using GemPy, an open-source,..."><img alt="" src="../_images/sphx_glr_f06_unconformity_thumb.png" />
+<p><a class="reference internal" href="../examples/f06_unconformity.html#sphx-glr-examples-f06-unconformity-py"><span class="std std-ref">Model 6 - Unconformity</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Model 6 - Unconformity</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This script creates a folded domain featuring an unconformity and a fault using GemPy, an open-..."><img alt="" src="../_images/sphx_glr_g07_combination_thumb.png" />
+<p><a class="reference internal" href="../examples/g07_combination.html#sphx-glr-examples-g07-combination-py"><span class="std std-ref">Model 7 - Combination</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Model 7 - Combination</div>
+</div></div><div class="sphx-glr-clear"></div><p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.__init__" title="gempy.core.data.GeoModel.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name, structural_frame, grid, ...)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_surface_points</span></code>(X, Y, Z, surface[, nugget])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_transform</span></code>([auto_anisotropy, ...])</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.geophysics_input" title="gempy.core.data.GeoModel.geophysics_input"><code class="xref py py-obj docutils literal notranslate"><span class="pre">geophysics_input</span></code></a></p></td>
+<td><p>The geophysics input of the geological model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_data_descriptor</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.interpolation_grid" title="gempy.core.data.GeoModel.interpolation_grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interpolation_grid</span></code></a></p></td>
+<td><p>Optional grid used for interpolation.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interpolation_input</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.legacy_model" title="gempy.core.data.GeoModel.legacy_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">legacy_model</span></code></a></p></td>
+<td><p>Legacy model (if available).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.orientations" title="gempy.core.data.GeoModel.orientations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientations</span></code></a></p></td>
+<td><p>This is a copy! Returns a OrientationsTable for all orientations across the structural elements</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">solutions</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.surface_points" title="gempy.core.data.GeoModel.surface_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">surface_points</span></code></a></p></td>
+<td><p>This is a copy! Returns a SurfacePointsTable for all surface points across the structural elements</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.transform" title="gempy.core.data.GeoModel.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a></p></td>
+<td><p>The transformation used in the geological model for input points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.meta" title="gempy.core.data.GeoModel.meta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">meta</span></code></a></p></td>
+<td><p>Meta-information about the geological model, like its name, creation and modification dates, and owner.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.structural_frame" title="gempy.core.data.GeoModel.structural_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">structural_frame</span></code></a></p></td>
+<td><p>The structural information of the geological model.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.grid" title="gempy.core.data.GeoModel.grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">grid</span></code></a></p></td>
+<td><p>The general grid used in the geological model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#gempy.core.data.GeoModel.interpolation_options" title="gempy.core.data.GeoModel.interpolation_options"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interpolation_options</span></code></a></p></td>
+<td><p>The interpolation options provided by the user.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.geophysics_input">
+<span class="sig-name descname"><span class="pre">geophysics_input</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">GeophysicsInput</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#gempy.core.data.GeoModel.geophysics_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>The geophysics input of the geological model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.interpolation_grid">
+<span class="sig-name descname"><span class="pre">interpolation_grid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Grid</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#gempy.core.data.GeoModel.interpolation_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional grid used for interpolation. Can be seen as a cache field.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.legacy_model">
+<span class="sig-name descname"><span class="pre">legacy_model</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">gpl.Project</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#gempy.core.data.GeoModel.legacy_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Legacy model (if available). Allows for backward compatibility.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structural_frame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gempy.core.data.StructuralFrame.html#gempy.core.data.StructuralFrame" title="gempy.core.data.structural_frame.StructuralFrame"><span class="pre">StructuralFrame</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gempy.core.data.Grid.html#gempy.core.data.Grid" title="gempy.core.data.grid.Grid"><span class="pre">Grid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">interpolation_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gempy.core.data.InterpolationOptions.html#gempy.core.data.InterpolationOptions" title="gempy_engine.core.data.options.InterpolationOptions"><span class="pre">InterpolationOptions</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gempy/core/data/geo_model.html#GeoModel.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gempy.core.data.GeoModel.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.meta">
+<span class="sig-name descname"><span class="pre">meta</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">GeoModelMeta</span></em><a class="headerlink" href="#gempy.core.data.GeoModel.meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Meta-information about the geological model, like its name, creation and modification dates, and owner.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.structural_frame">
+<span class="sig-name descname"><span class="pre">structural_frame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="gempy.core.data.StructuralFrame.html#gempy.core.data.StructuralFrame" title="gempy.core.data.structural_frame.StructuralFrame"><span class="pre">StructuralFrame</span></a></em><a class="headerlink" href="#gempy.core.data.GeoModel.structural_frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>The structural information of the geological model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.grid">
+<span class="sig-name descname"><span class="pre">grid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="gempy.core.data.Grid.html#gempy.core.data.Grid" title="gempy.core.data.grid.Grid"><span class="pre">Grid</span></a></em><a class="headerlink" href="#gempy.core.data.GeoModel.grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>The general grid used in the geological model.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.interpolation_options">
+<span class="sig-name descname"><span class="pre">interpolation_options</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="gempy.core.data.InterpolationOptions.html#gempy.core.data.InterpolationOptions" title="gempy_engine.core.data.options.InterpolationOptions"><span class="pre">InterpolationOptions</span></a></em><a class="headerlink" href="#gempy.core.data.GeoModel.interpolation_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>The interpolation options provided by the user.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Transform</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#gempy.core.data.GeoModel.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>The transformation used in the geological model for input points.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.surface_points">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">surface_points</span></span><a class="headerlink" href="#gempy.core.data.GeoModel.surface_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a copy! Returns a SurfacePointsTable for all surface points across the structural elements</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="gempy.core.data.GeoModel.orientations">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">orientations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="gempy.core.data.OrientationsTable.html#gempy.core.data.OrientationsTable" title="gempy.core.data.orientations.OrientationsTable"><span class="pre">OrientationsTable</span></a></em><a class="headerlink" href="#gempy.core.data.GeoModel.orientations" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a copy! Returns a OrientationsTable for all orientations across the structural elements</p>
+</dd></dl>
+
+</section>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/logos/gempy.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=gempy-project&repo=gempy&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects.html">Additional projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">GemPy Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Simple geometries</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../api_reference.html">Code</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_reference.html#data-classes">Data Classes</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../api_reference.html#module-gempy.core.data">Modeling Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_reference.html#helper-classes">Helper Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api_reference.html#enumerators">Enumerators</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../api_reference.html">Code</a><ul>
+      <li>Previous: <a href="../Plot/gempy_viewer.plot_3d.html" title="previous chapter">gempy_viewer.plot_3d</a></li>
+      <li>Next: <a href="gempy.core.data.StructuralFrame.html" title="next chapter">gempy.core.data.StructuralFrame</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017-2023, Gempy Developers.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/Modeling Classes/gempy.core.data.GeoModel.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

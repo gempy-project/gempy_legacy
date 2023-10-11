@@ -1,0 +1,12 @@
+gempy_engine
+
+[dev]
+sphinx==3.5.4
+sphinx_gallery
+pooch
+pytest-approvaltests
+
+[opt]
+gempy_viewer
+numpy
+subsurface
